@@ -1,0 +1,38 @@
+figure>img {
+    width: 150px;
+    height: 185px;
+}
+
+figcaption {
+    position: relative;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bolder;
+    padding: 5px;
+    width: 150px;
+    background-color: rgba(233, 230, 38, 0.747);
+    top: -50px;
+    color: rgba(0, 0, 0, 0.76);
+    visibility: hidden;
+}
+
+figcaption>p {
+    margin: 0;
+    padding: 0;
+}
+
+.preco-prod {
+    text-decoration: line-through;
+    font-size: 10pt;
+}
+.precoantes-prod{
+    text-decoration: line-through;
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.76);
+}
+.precofinal-prod {
+    text-decoration: solid;
+    font-size: 10pt;
+    color: rgba(223, 13, 13, 0.9);
+}
