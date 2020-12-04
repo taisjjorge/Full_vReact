@@ -1,7 +1,5 @@
 
 
-
-
 function BoasVindas() {
     return (
         <Home />  

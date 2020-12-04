@@ -36,7 +36,7 @@ export default function Pedidos() {
             body: json
         }
 
-        const resposta = await fetch("http://localhost/getDados/pedidos.php", 
+        const resposta = await fetch("http://localhost/full_stack_eletronicos/FullStackEletronicos/php/actions/pedidos.php", 
             opcoes);
         const dados = await resposta.json()
         console.log(dados);
