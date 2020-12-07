@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { dados } from '../img/dados';
 import Produto from '../Components/Produto';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, ListGroup } from 'react-bootstrap';
 
 
 export default function Produtos() {
@@ -16,7 +16,29 @@ export default function Produtos() {
         }, []);
     
         return (
-            <Container>
+
+            <Container fluid>
+                <Container fluid>
+            <ListGroup>
+                <ListGroup.Item action onclick="exibirTodos()"  variant="success">
+                    Todas as marcas (12)
+                </ListGroup.Item>
+                <ListGroup.Item action onclick="filtrar('televisao')" variant="success">
+                    Motorola (5)
+                </ListGroup.Item>
+                <ListGroup.Item action onclick="filtrar('celular')" variant="success">
+                    Nokia (3)
+                </ListGroup.Item>
+                <ListGroup.Item action onclick="filtrar('maquinaDeLavar')" variant="success">
+                    SonyEricsson (3)
+                </ListGroup.Item>
+                <ListGroup.Item action onclick="filtrar('geladeira')" variant="success">
+                    Siemens (1)
+                </ListGroup.Item>
+            </ListGroup>
+        </Container>
+
+            
                 <Row>
                     { produtos && produtos.map(item => <Produto key={item.id} categoria={item.categoria} descricao={item.descricao} 
                     preco={item.preco} imagem={item.imagem}/> )}
